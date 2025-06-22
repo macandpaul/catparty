@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paul and Mac’s Cat-astrophe Gala RSVP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6f0;
+      padding: 40px;
+      color: #333;
+    }
+    h1 {
+      color: #cc3366;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #cc3366;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #aa2c57;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Paul and Mac’s Cat-astrophe Gala!</h1>
+  <p><strong>Date:</strong> August 16, 2025<br>
+     <strong>Time:</strong> 6:30 to whenever<br>
+     <strong>Place:</strong> 16 Hidden Springs Road, Madison, CT<br>
+     <strong>Dress Code:</strong> Something you can nap in. Bonus points for faux fur, collars, or anything with a bell.
+  </p>
+
+  <form action="mailto:macdaramaccoll@gmail.com" method="POST" enctype="text/plain">
+    <div class="section">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="Name" required>
+    </div>
+
+    <div class="section">
+      <label>🐾 Will you be attending?</label>
+      <input type="radio" name="Attendance" value="Yes, I can’t resist a sunbeam and a soft blanket."> Yes, I can’t resist a sunbeam and a soft blanket.<br>
+      <input type="radio" name="Attendance" value="No, I’m too busy knocking things off counters."> No, I’m too busy knocking things off counters.<br>
+      <input type="radio" name="Attendance" value="Maybe—I need to consult the feline overlords."> Maybe—I need to consult the feline overlords.
+    </div>
+
+    <div class="section">
+      <label>🐾 Do you have any kibble restrictions?</label>
+      <input type="radio" name="Kibble" value="Meat-lover"> Meat-lover<br>
+      <input type="radio" name="Kibble" value="Greenies only"> Greenies only
+    </div>
+
+    <div class="section">
+      <label>🐾 Favorite toy to awkwardly chase in front of strangers:</label>
+      <input type="radio" name="Toy" value="Laser Pointer"> Laser Pointer<br>
+      <input type="radio" name="Toy" value="Crinkly Tunnel"> Crinkly Tunnel<br>
+      <input type="radio" name="Toy" value="Random bread-bag tie"> Random bread-bag tie<br>
+      <input type="radio" name="Toy" value="Your shoelaces"> Your shoelaces
+    </div>
+
+    <input type="submit" value="Send My RSVP">
+  </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Party Video</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    video {
+      width: 80%;
+      max-width: 800px;
+      border: 5px solid #ff69b4;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <a href="catpartyrsvp.html">
+    <iframe width="800" height="450" 
+  src="https://www.youtube.com/embed/your-video-id" 
+  title="Cat Party Video" 
+  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
+  </a>
+
+  <script>
+    // Allow autoplay with sound after user interaction
+    window.addEventListener('click', () => {
+      const video = document.getElementById('catPartyVideo');
+      if (video.muted) {
+        video.muted = false;
+        video.play();
+      }
+    });
+  </script>
+</body>
+</html>
